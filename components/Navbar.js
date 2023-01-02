@@ -1,29 +1,32 @@
+import { useRef } from 'react'
 import Link from "next/link"
 import { TiThMenu, TiTimes } from "react-icons/ti"
-import styles from '../styles/Navbar.module.css'
 
 
 export default function Navbar() {
 
-    function showNav() {
-        console.log("Show Nav")
+    const nav = useRef()
+
+    function toggleNav() {
+        nav.current.classList.toggle("responsive_nav")
     }
 
     return (
-        <div className={styles.nav}>
-            <nav>
+        <nav>
+            <div ref={nav}>
                 <Link href="/">Inicio</Link>
                 <Link href="/tienda">Tienda</Link>
                 <Link href="/contacto">Contacto</Link>
-                <button onClick={showNav} className={`${styles.nav__btn} ${styles.nav__close}`} >
+
+                <button onClick={toggleNav} className="nav__btn nav__btn-close" >
                     <TiTimes />
                 </button>
-            </nav>
+            </div>
 
-                <button onClick={showNav} className={styles.nav__btn} >
-                    <TiThMenu />
-                </button>
-        </div>
+            <button onClick={toggleNav} className="nav__btn" >
+                <TiThMenu />
+            </button>
+        </nav>
     )
 }
 
