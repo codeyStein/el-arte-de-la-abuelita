@@ -1,15 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
+/*
+ ===== VARIABLE REFFERENCES ====
+    --clr__primary: black;
+    --clr__secondary: white;
+    --clr__other: yellow;
+    --font_family--primary: 'Poppins', sans-serif;
+    --font_family--secondary: 'Playball', cursive;
+    --font_wght--default: 400;
+    --font_wght--medium: 500;
+    --font_wght--header: 700;
+    --font_sze--default: 1.7rem;
+    --font_sze--header: 4.5rem;
+    --font_sze--subheader: 3rem;
+*/
+
 .header {
-    font-family: 'Playball', crusive;
+    font-family: var(--font_family--secondary);
     width: 100%;
     text-align: center;
     margin-bottom: 25px;
-    font-size: 3rem;
+    font-size: var(--font_sze--subheader);
     text-decoration: underline yellow 10px;
 }
 
 .primary {
-    font-size: 4.5rem;
+    font-size: var(--font_sze--header);
 }
 

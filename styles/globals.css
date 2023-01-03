@@ -2,13 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
 :root {
-    --primary: black;
-    --secondary: white;
+    --clr__primary: black;
+    --clr__secondary: white;
+    --clr__other: yellow;
     --font_family--primary: 'Poppins', sans-serif;
-    --font_family--secondary: 'Poppins', sans-serif;
+    --font_family--secondary: 'Playball', cursive;
     --font_wght--default: 400;
     --font_wght--medium: 500;
     --font_wght--header: 700;
+    --font_sze--default: 1.7rem;
+    --font_sze--header: 4.5rem;
+    --font_sze--subheader: 3rem;
 }
 
 body {
