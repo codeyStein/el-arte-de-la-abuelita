@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*
+ ===== VARIABLE REFFERENCES ====
+    --clr__primary: black;
+    --clr__secondary: white;
+    --clr__other: yellow;
+    --font_family--primary: 'Poppins', sans-serif;
+    --font_family--secondary: 'Playball', cursive;
+    --font_wght--default: 400;
+    --font_wght--medium: 500;
+    --font_wght--header: 700;
+    --font_sze--default: clamp(2.4vw, 1.3rem, 2.3rem);
+    --font_sze--mini: clamp(1.8vw, 0.8rem, 1.8rem);
+    --font_sze--header: clamp(5vw, 2rem, 4.5rem);
+    --font_sze--subheader: clamp(3vw, 1.6rem, 3rem);
+*/
+
+
+.text {
+    font-family: var(--font_family--primary);
+    font-weight: var(--font_wght--default);
+    font-size:  var(--font_sze--default);
+    width: 100%;
+    text-align: center;
+}
+
+.mini {
+    font-size: var(--font_sze--mini);
+}
+
