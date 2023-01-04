@@ -22,6 +22,7 @@
     font-weight: var(--font_wght--default);
     font-size:  var(--font_sze--default);
     width: 100%;
+    margin: 0;
     text-align: center;
 }
 

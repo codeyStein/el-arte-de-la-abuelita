@@ -10,18 +10,19 @@
     --font_wght--default: 400;
     --font_wght--medium: 500;
     --font_wght--header: 700;
-    --font_sze--default: 1.7rem;
-    --font_sze--header: 4.5rem;
-    --font_sze--subheader: 3rem;
+    --font_sze--default: clamp(2.4vw, 1.3rem, 2.3rem);
+    --font_sze--mini: clamp(1.8vw, 0.8rem, 1.8rem);
+    --font_sze--header: clamp(5vw, 2rem, 4.5rem);
+    --font_sze--subheader: clamp(3vw, 1.6rem, 3rem);
 */
 
 .header {
     font-family: var(--font_family--secondary);
     width: 100%;
+    margin: 0;
     text-align: center;
-    margin-bottom: 25px;
     font-size: var(--font_sze--subheader);
-    text-decoration: underline yellow 10px;
+    text-decoration: underline var(--clr__other) 10px;
 }
 
 .primary {
