@@ -1,0 +1,51 @@
+/*
+ ===== VARIABLE REFFERENCES ====
+    --clr__primary: black;
+    --clr__secondary: white;
+    --clr__other: yellow;
+    --font_family--primary: 'Poppins', sans-serif;
+    --font_family--secondary: 'Playball', cursive;
+    --font_wght--default: 400;
+    --font_wght--medium: 500;
+    --font_wght--header: 700;
+    --font_sze--default: clamp(2.4vw, 1.3rem, 2.3rem);
+    --font_sze--mini: clamp(1.8vw, 0.8rem, 1.8rem);
+    --font_sze--header: clamp(5vw, 2rem, 4.5rem);
+    --font_sze--subheader: clamp(3vw, 1.6rem, 3rem);
+*/
+
+.button {
+    font-family: var(--font_family--primary);
+    font-weight: var(--font_wght--default);
+    font-size: var(--font_sze--mini);
+    height: 100px;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s cubic-bezier(1,.01,.02,1.03);
+}
+
+.button:hover, .outline:focus {
+    transform: scale(0.9);
+}
+
+.button:active {
+    font-family: var(--font_family--secondary);
+}
+
+.outline {
+    color: var(--clr__primary);
+    background: transparent;
+    outline: 4px solid var(--clr__primary);
+}
+
+
+.fill {
+    color: var(--clr__secondary);
+    background: var(--clr__primary);
+}
+
+@media only screen and (max-width: 950px) { .button { height: 70px } }
+@media only screen and (max-width: 750px) { .button { height: 50px; border-radius: 10px; } }
