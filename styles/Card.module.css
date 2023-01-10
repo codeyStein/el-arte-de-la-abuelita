@@ -1,0 +1,54 @@
+/*
+    ==== VARIABLE REFERENCE ====
+
+    --clr__primary: black;
+    --clr__secondary: white;
+    --clr__other: yellow;
+    --font_family--primary: 'Poppins', sans-serif;
+    --font_family--secondary: 'Playball', cursive;
+    --font_wght--default: 400;
+    --font_wght--medium: 500;
+    --font_wght--header: 700;
+    --font_sze--default: clamp(2.4vw, 1.3rem, 2.3rem);
+    --font_sze--mini: clamp(1.8vw, 0.8rem, 1.8rem);
+    --font_sze--header: clamp(5vw, 2rem, 4.5rem);
+    --font_sze--subheader: clamp(3vw, 1.6rem, 3rem);
+    --card__gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+    --card__shadow: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+*/
+
+.small {
+    width: 300px;
+    height: 300px;
+    filter: var(--card__shadow);
+}
+
+.small img {
+    border-radius: 25px;
+    z-index: 7;
+}
+
+.small p {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+    color: var(--clr__secondary);
+    font-size: var(--font_sze--subheader);
+    z-index: 9;
+}
+
+.small div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--card__gradient);
+    border-radius: 25px;
+    z-index: 8;
+}
+
+
+
