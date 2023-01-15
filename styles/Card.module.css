@@ -19,11 +19,13 @@
 
 .small {
     width: 300px;
-    height: 300px;
+    aspect-ratio: 1 / 1;
     filter: var(--card__shadow);
+    transition: var(--transition-ease);
 }
 
 .small img {
+    position: relative;
     border-radius: 25px;
     z-index: 7;
 }
@@ -34,7 +36,7 @@
     bottom: 25px;
     transform: translateX(-50%);
     color: var(--clr__secondary);
-    font-size: var(--font_sze--subheader);
+    font-size: var(--font_sze--default);
     z-index: 9;
 }
 
@@ -50,5 +52,11 @@
     z-index: 8;
 }
 
+.small:hover, .small:focus {
+    transform: scale(1.05);
+}
 
+@media only screen and (max-width: 780px) {
+    .small { width: 200px; }
+}
 

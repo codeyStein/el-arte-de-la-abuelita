@@ -10,44 +10,17 @@
     --font_wght--default: 400;
     --font_wght--medium: 500;
     --font_wght--header: 700;
-    --font_sze--default: clamp(2.4vw, 1.3rem, 2.3rem);
     --font_sze--mini: clamp(1.8vw, 0.8rem, 1.8rem);
-    --font_sze--header: clamp(5vw, 2rem, 4.5rem);
-    --font_sze--subheader: clamp(3vw, 1.2rem, 3.3rem);
+    --font_sze--default: clamp(2.5vw, 1.5rem, 3rem);
+    --font_sze--header: clamp(6vw, 4rem, 7rem);
+    --font_sze--subheader: clamp(4vw, 2.5rem, 5rem);
     --card__gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%);
     --card__shadow: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+    --transition-ease: 0.5s cubic-bezier(1,.01,.02,1.03);
 }
 
 body {
     background-color: #fff;
     margin: 0;
 }
-
-header {
-    margin: 200px 200px 0 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-header div {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-}
-
-@media only screen and (max-width: 800px) {
-    header { margin: 150px 100px 0 100px } 
-    header div { gap: 30px }
-}
-
-@media only screen and (max-width: 500px) {
-    header { margin: 100px 50px 0 50px } 
-}
-
-@media only screen and (max-width: 390px) {
-    header { margin: 100px 20px 0 20px }
-    header div { gap: 20px }
-}
-
 

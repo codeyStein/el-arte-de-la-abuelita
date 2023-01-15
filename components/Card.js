@@ -17,8 +17,8 @@ export default function Card(props) {
                 <Image 
                     src={props.section.src}
                     alt={props.section.alt}
-                    width={300}
-                    height={300}
+                    layout="fill" 
+                    objectFit="cover"
                 />
                 <Text style='mini' label={props.section.label} />
                 <div/>
