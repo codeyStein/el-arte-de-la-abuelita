@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import { NextSeo } from 'next-seo'
+// COMPONENTS
 import Navbar from '../components/Navbar'
+// SECTIONS
 import Home from '../components/Home.js'
+import Shop from '../components/Shop.js'
 
 export default function Index() {
   return (
@@ -19,6 +22,7 @@ export default function Index() {
       <main>
         <Navbar />
         <Home />
+        <Shop />
       </main>
     </>
   )
