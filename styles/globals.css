@@ -24,3 +24,11 @@ body {
     margin: 0;
 }
 
+section {
+    margin: 50px 250px 0 250px;
+}
+
+@media only screen and (max-width: 1265px) { section { margin: 50px 150px 0 150px } }
+@media only screen and (max-width: 1060px) { section { margin: 50px 70px 0 70px } }
+@media only screen and (max-width: 905px) { section { margin: 50px 20px 0 20px } }
+
