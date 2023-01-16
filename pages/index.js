@@ -5,6 +5,7 @@ import Navbar from '../components/Navbar'
 // SECTIONS
 import Home from '../components/Home.js'
 import Shop from '../components/Shop.js'
+import Contact from '../components/Contact.js'
 
 export default function Index() {
   return (
@@ -23,6 +24,7 @@ export default function Index() {
         <Navbar />
         <Home />
         <Shop />
+        <Contact />
       </main>
     </>
   )
