@@ -13,7 +13,7 @@ export default function Card(props) {
     }
 
     const small = (
-            <figure className={styles.small}>
+            <figure className={`${styles.small} ${styles.card}`}>
                 <Image 
                     src={props.section.src}
                     alt={props.section.alt}
@@ -26,7 +26,7 @@ export default function Card(props) {
     )
 
     const product = (
-        <figure>
+        <figure className={`${styles.card}`}>
             <Image 
                 src={props.section.src}
                 alt={props.section.alt}

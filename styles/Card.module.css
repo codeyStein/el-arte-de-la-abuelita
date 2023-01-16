@@ -17,6 +17,10 @@
     --card__shadow: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
 */
 
+.card {
+    margin: 0;
+}
+
 .small {
     width: 300px;
     aspect-ratio: 1 / 1;
