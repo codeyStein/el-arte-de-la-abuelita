@@ -39,12 +39,14 @@ export default function Contact() {
 
 
     return (
-        <section>
+        <section className="contact">
             <Header label="Contacto" primary={false} />
-            <Text style="mini" label="Soy una señora de 79 años hago bisuteria, y trabajo con madera a mano." />
 
-            <div>
-                {contacts}
+            <div className="main">
+                <Text style="mini" label="Tienes una consulta o pregunta relacionada con mi trabajo? No tenga pena de contactarme!" />
+                <div>
+                    {contacts}
+                </div>
             </div>
 
         </section>
