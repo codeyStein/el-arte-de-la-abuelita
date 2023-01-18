@@ -31,7 +31,7 @@ export default function Contact() {
 
         return (
                 <figure key={provider.name} >
-                    <Icon />
+                    <Icon size={30} />
                     <Text style="mini" label={provider.label} />
                 </figure>
         )
@@ -42,7 +42,7 @@ export default function Contact() {
         <section className="contact">
             <Header label="Contacto" primary={false} />
 
-            <div className="main">
+            <div className="contact_container">
                 <Text style="mini" label="Tienes una consulta o pregunta relacionada con mi trabajo? No tenga pena de contactarme!" />
                 <div>
                     {contacts}
