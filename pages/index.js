@@ -1,11 +1,13 @@
+import React, { lazy, Suspense } from "react"
 import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 // COMPONENTS
 import Navbar from '../components/Navbar'
 // SECTIONS
-import Home from '../components/Home.js'
-import Shop from '../components/Shop.js'
-import Contact from '../components/Contact.js'
+import Home from '../components/Home'
+const Shop = lazy(() => import('../components/Shop'))
+const Contact = lazy(() => import('../components/Contact'))
+// Lazy Load Above Components
 
 export default function Index() {
   return (
@@ -21,10 +23,12 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Navbar />
-        <Home />
-        <Shop />
-        <Contact />
+          <Navbar />
+          <Home />
+          <Suspense fallback={<h1>Loading...</h1>}>
+              <Shop />
+              <Contact />
+          </Suspense>
       </main>
     </>
   )
