@@ -10,13 +10,14 @@
     --font_wght--default: 400;
     --font_wght--medium: 500;
     --font_wght--header: 700;
-    --font_sze--mini: clamp(1.8vw, 0.8rem, 1.8rem);
+    --font_sze--mini: clamp(1.7vw, 0.7rem, 1.7rem);
     --font_sze--default: clamp(2.5vw, 1.5rem, 3rem);
     --font_sze--header: clamp(6vw, 4rem, 7rem);
     --font_sze--subheader: clamp(4vw, 2.5rem, 5rem);
     --card__gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%);
     --card__shadow: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
     --transition-ease: 0.5s cubic-bezier(1,.01,.02,1.03);
+    --clamp__margin-leftright: clamp(13vw, 20px, 250px);
 }
 
 body {
@@ -25,10 +26,8 @@ body {
 }
 
 section {
-    margin: 50px 250px 0 250px;
+    margin: 50px var(--clamp__margin-leftright) 0 var(--clamp__margin-leftright);
+    row-gap: 60px;
 }
 
-@media only screen and (max-width: 1265px) { section { margin: 50px 150px 0 150px } }
-@media only screen and (max-width: 1060px) { section { margin: 50px 70px 0 70px } }
-@media only screen and (max-width: 905px) { section { margin: 50px 20px 0 20px } }
 
