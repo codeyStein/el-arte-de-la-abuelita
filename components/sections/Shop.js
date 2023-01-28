@@ -1,6 +1,6 @@
-import Card from './Card.js'
-import Header from './Header.js'
-import sectionData from "../data/sections.js"
+import Card from '../Card.js'
+import Header from '../Header.js'
+import sectionData from "../../data/sections.js"
 
 
 export default function Shop() {

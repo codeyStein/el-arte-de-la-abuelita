@@ -1,6 +1,6 @@
-import Header from './Header.js'
-import Text from './Text.js'
-import Button from './Button.js'
+import Header from '../Header.js'
+import Text from '../Text.js'
+import Button from '../Button.js'
 import Link from 'next/link'
 
 export default function Home() {
