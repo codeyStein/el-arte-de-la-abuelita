@@ -4,9 +4,9 @@ import { NextSeo } from 'next-seo'
 // COMPONENTS
 import Navbar from '../components/Navbar'
 // SECTIONS
-import Home from '../components/Home'
-const Shop = lazy(() => import('../components/Shop'))
-const Contact = lazy(() => import('../components/Contact'))
+import Home from '../components/sections/Home'
+const Shop = lazy(() => import('../components/sections/Shop'))
+const Contact = lazy(() => import('../components/sections/Contact'))
 // Lazy Load Above Components
 
 export default function Index() {
