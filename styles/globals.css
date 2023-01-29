@@ -25,9 +25,13 @@ body {
     margin: 0;
 }
 
-section {
-    margin: 50px var(--clamp__margin-leftright) 0 var(--clamp__margin-leftright);
-    row-gap: 60px;
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin: 0 var(--clamp__margin-leftright);
 }
+
+section { row-gap: 60px; }
 
 
