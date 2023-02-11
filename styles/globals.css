@@ -4,7 +4,7 @@
 :root {
     --clr__primary: black;
     --clr__secondary: white;
-    --clr__other: yellow;
+    --clr__other: #FF479F;
     --font_family--primary: 'Poppins', sans-serif;
     --font_family--secondary: 'Playball', cursive;
     --font_wght--default: 400;
