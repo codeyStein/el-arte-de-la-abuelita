@@ -1,0 +1,38 @@
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+
+.about p {
+  text-align: left;
+}
+
+.about img {
+  border-radius: 50%;
+  width: 350px;
+  height: 250px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+  border: 5px solid white;
+}
+
+@media only screen and (max-width: 850px) {
+  .about img {
+    width: 180px;
+    height: 100px;
+  }
+  .about div { gap: 75px; }
+}
+
+@media only screen and (max-width: 500px) {
+  .about div { flex-direction: column-reverse; gap: 50px; }
+  .about img { width: 150px; height: 150px; }
+}
+

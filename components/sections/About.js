@@ -6,7 +6,7 @@ import profileImage from '../../public/placeholder.jpg'
 
 export default function About() {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <Header label="Sobre Nosotros" primary={false} />
       <div>
         <Text label="Soy una abuelita de 79 años hago trabajo apasionado con bisuteria, y trabajo con madera a mano." style="mini" />

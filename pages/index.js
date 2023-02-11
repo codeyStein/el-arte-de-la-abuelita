@@ -7,6 +7,7 @@ import Navbar from '../components/Navbar'
 import Home from '../components/sections/Home'
 const Shop = lazy(() => import('../components/sections/Shop'))
 const Contact = lazy(() => import('../components/sections/Contact'))
+const About = lazy(() => import('../components/sections/About'))
 // Lazy Load Above Components
 
 export default function Index() {
@@ -34,9 +35,10 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <Home />
       <main>
-        <Home />
         <Suspense fallback={<h1>Loading...</h1>}>
+          <About />
           <Shop />
           <Contact />
         </Suspense>
