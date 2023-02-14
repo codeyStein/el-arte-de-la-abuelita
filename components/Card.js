@@ -12,6 +12,19 @@ export default function Card(props) {
         }
     }
 
+    const product = (
+        <figure className={`${styles.card}`}>
+            <Image 
+                src={props.product.src}
+                alt={props.product.alt}
+                width={300}
+                height={300}
+            />
+            <Text style='mini' label={props.product.name} />
+            <Text style='mini' label={props.product.price} />
+        </figure>
+    )
+
     const small = (
             <figure className={`${styles.small} ${styles.card}`}>
                 <Image 
@@ -25,18 +38,6 @@ export default function Card(props) {
             </figure>
     )
 
-    const product = (
-        <figure className={`${styles.card}`}>
-            <Image 
-                src={props.section.src}
-                alt={props.section.alt}
-                width={300}
-                height={300}
-            />
-            <Text style='mini' label={props.section.label} />
-            <Text style='mini' label={props.section.price} />
-        </figure>
-    )
 
     return (
         <>
