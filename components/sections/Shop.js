@@ -10,6 +10,7 @@ export default function Shop() {
             <Card
                 key={section.id}
                 section={section}
+                product={section}
                 style="mini"
             />
 
@@ -17,7 +18,7 @@ export default function Shop() {
     })
 
     return (
-        <section className="shop">
+        <section className="shop" id="shop">
             <Header label="Tienda" primary={false} />
             <div>
                 {cards}
