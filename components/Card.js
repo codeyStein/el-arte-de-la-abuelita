@@ -1,4 +1,4 @@
-import styles from '../styles/Card.module.css'
+import styles from '../styles/modules/Card.module.css'
 import Image from 'next/image'
 import Text from './Text.js'
 
@@ -13,15 +13,17 @@ export default function Card(props) {
     }
 
     const product = (
-        <figure className={`${styles.card}`}>
+        <figure className={`${styles.product} ${styles.card}`}>
             <Image 
                 src={props.product.src}
                 alt={props.product.alt}
                 width={300}
                 height={300}
             />
-            <Text style='mini' label={props.product.name} />
-            <Text style='mini' label={props.product.price} />
+            <div className={styles.product_name} >
+                <Text style='mini' label={props.product.name} />
+            </div>
+            <Text style='mini' label={`$${props.product.price}`} />
         </figure>
     )
 

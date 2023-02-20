@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/Text.module.css'
+import styles from '../styles/modules/Text.module.css'
 
 export default function Text(props) {
 

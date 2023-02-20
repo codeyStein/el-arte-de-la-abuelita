@@ -14,9 +14,10 @@ export default function Navbar() {
     return (
         <nav>
             <div ref={nav}>
-                <Link href="/">Inicio</Link>
-                <Link href="/tienda">Tienda</Link>
-                <Link href="/contacto">Contacto</Link>
+                <Link href="#">Inicio</Link>
+                <Link href="#about">Sobre Nosotros</Link>
+                <Link href="#shop">Tienda</Link>
+                <Link href="#contact">Contacto</Link>
 
                 <button onClick={toggleNav} className="nav__btn nav__btn-close" >
                     <TiTimes />

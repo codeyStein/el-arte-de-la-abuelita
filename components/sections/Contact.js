@@ -39,7 +39,7 @@ export default function Contact() {
 
 
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <Header label="Contacto" primary={false} />
 
       <div className="contact_container">
