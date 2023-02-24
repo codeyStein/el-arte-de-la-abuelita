@@ -4,6 +4,7 @@ import { NextSeo } from 'next-seo'
 // COMPONENTS
 import Navbar from '../../components/Navbar'
 import Card from '../../components/Card'
+import Header from '../../components/Header'
 // DATA
 import productData from '../../data/products/masetas'
 
@@ -45,7 +46,13 @@ export default function Masetas() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            {products}
+            <Navbar />
+            <main>
+                <Header label="Productos de Masetas" primary={false} />
+                <div className="products" id="productos">
+                    {products}
+                </div>
+            </main>
         </>
     )
 }
