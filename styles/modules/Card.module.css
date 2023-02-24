@@ -106,19 +106,12 @@
 
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 780px) {
-    .small { width: 200px; }
-}
-
 @media only screen and (max-width: 850px) {
-    .product {
-        width: 200px;
-        padding: 0px 0px 25px 0px;
-    }
-    .product img {
-        max-width: 200px;
-        max-height: 200px;
-    }
+    .small { width: 200px; }
+
+    .product { width: 200px; padding: 0px 0px 25px 0px; }
+    .product img { max-width: 200px; max-height: 200px; }
     .product_name p { font-size: 85% }
 }
+
 
