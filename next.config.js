@@ -2,6 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
     images: {
+        domains: ['instagram.fsal1-1.fna.fbcdn.net'],
         remotePatterns: [
             {
                 protocol: 'https',
