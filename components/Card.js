@@ -17,6 +17,7 @@ export default function Card(props) {
             <Image 
                 src={props.product.src}
                 alt={props.product.alt}
+                objectFit="cover"
                 width={300}
                 height={300}
             />

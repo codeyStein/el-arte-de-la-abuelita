@@ -70,7 +70,7 @@
     width: 300px;
     aspect-ratio: 1 / 1.2;
     gap: 21px;
-    padding: 0px 0px 10px 0px;
+    padding: 0px 0px 15px 0px;
     filter: var(--card__shadow);
     transition: var(--transition-ease);
     background: var(--clr__secondary);
@@ -80,15 +80,14 @@
 }
 
 .product img {
-    width: auto;
-    height: auto;
+    height: 100%;
+    width: 100%;
+    display: block;
     max-width: 300px;
     max-height: 300px;
+    margin: 0px;
     border-radius: 25px 25px 0 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .product p {
