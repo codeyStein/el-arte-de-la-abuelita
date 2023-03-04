@@ -5,9 +5,9 @@ export default function Text(props) {
 
     const isMini = () => {
         if (props.style=='mini') {
-            return false
-        } else {
             return true
+        } else {
+            return false
         }
     }
 
