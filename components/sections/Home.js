@@ -7,11 +7,11 @@ export default function Home() {
 
     return (
         <header>
-            <Header label="El Arte de la Abuelita" primary={true} />
+            < Header label="El Arte de la Abuelita" primary={true} />
             <Text style='mini' label="Bisuteria y manualidades a mano con madera"/>
             <div>
-                <Button style='fill' label="Tienda" />
-                <Button style='outline' label="Instagram" />
+                <Link href="/#shop"> <Button style='fill' label="Tienda" /> </Link>
+                <Link href="/#shop"> <Button style='outline' label="Instagram" /> </Link>
             </div>
         </header>
     )

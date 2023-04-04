@@ -10,7 +10,8 @@
     --font_wght--default: 400;
     --font_wght--medium: 500;
     --font_wght--header: 700;
-    --font_sze--mini: clamp(1.7vw, 0.7rem, 1.7rem);
+    --font_sze--petit: clamp(1.5vw, 0.3rem, 1rem);
+    --font_sze--mini: clamp(1.7vw, 0.6rem, 1.5rem);
     --font_sze--default: clamp(2.5vw, 1.5rem, 3rem);
     --font_sze--header: clamp(6vw, 4rem, 7rem);
     --font_sze--subheader: clamp(4vw, 2.5rem, 5rem);
@@ -33,5 +34,4 @@ main {
 }
 
 section { row-gap: 60px; }
-
 

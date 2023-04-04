@@ -12,6 +12,10 @@ header div {
     gap: 50px;
 }
 
+header a {
+    width: 100%;
+}
+
 @media only screen and (max-width: 800px) {
     header { margin: 150px 100px 0 100px } 
     header div { gap: 30px }

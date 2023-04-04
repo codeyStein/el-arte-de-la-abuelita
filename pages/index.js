@@ -12,7 +12,8 @@ const About = lazy(() => import('../components/sections/About'))
 // Lazy Load Above Components
 
 export default function Index() {
-  return (
+
+return (
     <>
       <NextSeo
         title="El Arte de la Abuelita"
