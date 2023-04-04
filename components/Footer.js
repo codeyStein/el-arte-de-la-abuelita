@@ -6,19 +6,19 @@ import { RiFacebookFill, RiInstagramFill, RiPhoneFill } from "react-icons/ri"
 const dataSocials = [
     {
       name: "Numero de Telefono",
-      href: "N/A",
+      href: "/#contact",
       label: "7210-3310",
       icon: RiPhoneFill
     },
     {
       name: "Instagram",
-      href: "N/A",
+      href: "https://www.instagram.com/el_arte_de_la_abuelita/",
       label: "@el_arte_de_la_abuelita",
       icon: RiInstagramFill
     },
     {
       name: "Facebook",
-      href: "N/A",
+      href: "https://www.instagram.com/el_arte_de_la_abuelita/",
       label: "@el_arte_de_la_abuelita",
       icon: RiFacebookFill
     }
@@ -31,15 +31,15 @@ const dataLinks = [
     },
     {
         name: "Sobre Nosotros",
-        href: "/",
+        href: "/#about",
     },
     {
         name: "Tienda",
-        href: "/",
+        href: "/#shop",
     },
     {
         name: "Contacto",
-        href: "/",
+        href: "/#contact",
     }
 ]
 
@@ -56,8 +56,10 @@ const ItemSocials = dataSocials.map(social => {
 
     return (
       <figure key={social.name} >
-        <Icon size={30} />
-        <Text style="mini" label={social.label} />
+        <Link href={social.href}>
+            <Icon size={30} />
+            <Text style="mini" label={social.label} />
+        </Link>
       </figure>
     )
 })
