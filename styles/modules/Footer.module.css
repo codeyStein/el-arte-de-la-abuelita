@@ -1,0 +1,95 @@
+/* VARIABLE REFFERENCE
+    --clr__primary: black;
+    --clr__secondary: white;
+    --clr__other: #FF479F;
+    --font_family--primary: 'Poppins', sans-serif;
+    --font_family--secondary: 'Playball', cursive;
+    --font_wght--default: 400;
+    --font_wght--medium: 500;
+    --font_wght--header: 700;
+    --font_sze--mini: clamp(1.7vw, 0.6rem, 1.7rem);
+    --font_sze--default: clamp(2.5vw, 1.5rem, 3rem);
+    --font_sze--header: clamp(6vw, 4rem, 7rem);
+    --font_sze--subheader: clamp(4vw, 2.5rem, 5rem);
+    --card__gradient: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #000000 100%);
+    --card__shadow: drop-shadow(0 0 20px rgba(0, 0, 0, 0.25));
+    --transition-ease: 0.75s cubic-bezier(.52,.09,.02,.82);
+    --clamp__margin-leftright: clamp(13vw, 20px, 250px);
+*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    padding: 50px 100px;
+    gap: 75px;
+    border-radius: 50px 50px 0px 0px;
+    background: var(--clr__primary);
+    color: var(--clr__secondary);
+    font-family: var(--font_family--primary);
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 15px;
+    width: 100%;
+}
+.menu a { color: inherit; }
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.socials figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 10px;
+}
+
+.socials figure p { text-align: left }
+
+.footer p {
+    width: 100%;
+    font-size: var(--font_sze--petit);
+}
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        margin-top: 200px;
+        padding: 50px 25px;
+    }
+    .section {
+        gap: 0;
+    }
+}
+
+/* @media only screen and (max-width: 600px) {
+    .footer {
+        padding: 25px 50px;
+        gap: 25px;
+    }
+    .socials {
+        gap: 5px;
+    }
+} */
