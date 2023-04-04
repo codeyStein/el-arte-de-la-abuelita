@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 // COMPONENTS
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 // SECTIONS
 import Home from '../components/sections/Home'
 const Shop = lazy(() => import('../components/sections/Shop'))
@@ -43,6 +44,7 @@ export default function Index() {
           <Contact />
         </Suspense>
       </main>
+      <Footer />
     </>
   )
 }
