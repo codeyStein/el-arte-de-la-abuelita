@@ -5,6 +5,7 @@ import { NextSeo } from 'next-seo'
 import Navbar from '../../components/Navbar'
 import Card from '../../components/Card'
 import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 // DATA
 import productData from '../../data/products/madera'
 
@@ -55,6 +56,7 @@ export default function Masetas() {
                     {products}
                 </div>
             </main>
+            <Footer />
         </>
     )
 }

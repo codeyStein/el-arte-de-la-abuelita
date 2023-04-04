@@ -1,12 +1,14 @@
-import React, { lazy, Suspense } from "react"
+import React, { lazy, Suspense, useState, useEffect } from "react"
 import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 // COMPONENTS
 import Navbar from '../../components/Navbar'
 import Card from '../../components/Card'
 import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 // DATA
 import productData from '../../data/products/masetas'
+
 
 export default function Masetas() {
 
@@ -47,12 +49,15 @@ export default function Masetas() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Navbar />
+        <div>
+        </div>
             <main>
                 <Header label="Productos de Masetas" primary={false} />
                 <div className="products" id="productos">
                     {products}
                 </div>
             </main>
+            <Footer />
         </>
     )
 }
