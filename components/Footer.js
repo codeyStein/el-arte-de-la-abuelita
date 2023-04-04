@@ -45,7 +45,9 @@ const dataLinks = [
 
 const ItemLinks = dataLinks.map(link => {
     return (
-            <Link href={link.href} >{link.name}</Link>
+        <Link href={link.href} >
+        <Text label={link.name} style='mini' />
+        </Link>
     )
 })
 
@@ -63,11 +65,13 @@ const ItemSocials = dataSocials.map(social => {
 
 export default function Footer() {
     return (
-        <footer>
+        <footer className={styles.footer}>
 
-        <div className={styles.menu}>   { ItemLinks }   </div>
-        <Text label="Soy una señora de 79 años hago bisuteria, y trabajo con madera a mano." style="mini" />
-        <div className={styles.socials}>    { ItemSocials } </div>
+            <section className={styles.section}>
+                <div className={styles.menu}>   { ItemLinks }   </div>
+                <Text label="Soy una señora de 79 años hago bisuteria, y trabajo con madera a mano." style="mini" />
+            </section>
+            <div className={styles.socials}>    { ItemSocials } </div>
 
         </footer>
     )
