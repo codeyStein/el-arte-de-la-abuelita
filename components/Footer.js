@@ -45,7 +45,7 @@ const dataLinks = [
 
 const ItemLinks = dataLinks.map(link => {
     return (
-        <Link href={link.href} >
+        <Link key={link.name} href={link.href} >
         <Text label={link.name} style='mini' />
         </Link>
     )

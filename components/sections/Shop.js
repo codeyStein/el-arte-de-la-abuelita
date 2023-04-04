@@ -8,7 +8,7 @@ export default function Shop() {
 
     const cards = sectionData.map(section => {
         return (
-            <Link href={section.href}>
+            <Link key={section.id} href={section.href}>
                 <Card
                     key={section.id}
                     section={section}
