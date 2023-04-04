@@ -58,7 +58,8 @@
     width: 100%;
 }
 
-.socials figure {
+.socials a { 
+    color: inherit;
     display: flex;
     flex-direction: row;
     justify-content: center;
