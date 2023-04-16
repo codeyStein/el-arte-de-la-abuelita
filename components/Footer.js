@@ -1,4 +1,4 @@
-import Link from 'next/Link'
+import Link from "next/link"
 import Text from '../components/Text'
 import styles from '../styles/modules/Footer.module.css'
 import { RiFacebookFill, RiInstagramFill, RiPhoneFill } from "react-icons/ri"
