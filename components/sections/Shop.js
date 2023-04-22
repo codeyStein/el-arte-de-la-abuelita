@@ -22,7 +22,7 @@ export default function Shop() {
     return (
         <section className="shop" id="shop">
             <Header label="Tienda" primary={false} />
-            <div>
+            <div className="card_container">
                 {cards}
             </div>
         </section>

@@ -33,3 +33,6 @@ main {
     gap: 25px;
 }
 
+.products > * + * { margin-left: 25px;}
+
+

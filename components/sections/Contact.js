@@ -44,7 +44,7 @@ export default function Contact() {
 
       <div className="contact_container">
         <Text style="mini" label="Tienes una consulta o pregunta relacionada con mi trabajo? No tenga pena de contactarme!" />
-        <div>
+        <div className="provider_container">
           {contacts}
         </div>
       </div>

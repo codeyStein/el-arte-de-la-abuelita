@@ -30,7 +30,13 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 900px) { .contact_container div { row-gap: 5px } }
+.provider_container > * + * { margin-bottom: 15px;}
+
+@media only screen and (max-width: 900px) {
+    .contact_container div { row-gap: 5px } 
+    .provider_container > * + * { margin-bottom: 5px;}
+    
+}
 @media only screen and (max-width: 600px) {
     .contact_container { flex-direction: column }
     .contact_container { row-gap: 30px }
