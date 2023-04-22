@@ -1,5 +1,5 @@
 import styles from '../styles/modules/Card.module.css'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Text from './Text.js'
 
 export default function Card(props) {
@@ -18,6 +18,7 @@ export default function Card(props) {
                 src={props.product.src}
                 alt={props.product.alt}
                 objectFit="cover"
+                layout={"fill"}
                 width={300}
                 height={300}
             />

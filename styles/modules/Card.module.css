@@ -25,6 +25,7 @@
 /* SMALL CARD COMPONENT */
 .small {
     width: 300px;
+    height: 300px;
     aspect-ratio: 1 / 1;
     filter: var(--card__shadow);
     transition: var(--transition-ease);
