@@ -1,3 +1,4 @@
+.button-container  > * + * { margin-left: 3rem;}
 
 header {
     margin: 200px 200px 0 200px;
@@ -19,6 +20,27 @@ header a {
 @media only screen and (max-width: 800px) {
     header { margin: 150px 100px 0 100px } 
     header div { gap: 30px }
+    .button-container  > * + * { margin-left: 1.8;}
+
+header {
+    margin: 200px 200px 0 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+header a {
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    header { margin: 150px 100px 0 100px } 
 }
 
 @media only screen and (max-width: 500px) {
@@ -28,6 +50,7 @@ header a {
 @media only screen and (max-width: 390px) {
     header { margin: 100px 20px 0 20px }
     header div { gap: 20px }
+    .button-container  > * + * { margin-left: 1.25;}
 }
 
 

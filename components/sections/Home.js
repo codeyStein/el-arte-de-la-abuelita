@@ -9,7 +9,7 @@ export default function Home() {
         <header>
             < Header label="El Arte de la Abuelita" primary={true} />
             <Text style='mini' label="Bisuteria y manualidades a mano con madera"/>
-            <div>
+            <div className="button-container">
                 <Link href="/#shop"> <Button style='fill' label="Tienda" /> </Link>
                 <Link href="/#shop"> <Button style='outline' label="Instagram" /> </Link>
             </div>
