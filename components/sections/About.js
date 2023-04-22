@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../Header'
 import Text from '../Text'
 import Image from 'next/image'
-import profileImage from '../../public/profile_img.png'
+import profileImage from '../../public/img/profile_img.png'
 
 export default function About() {
   return (
