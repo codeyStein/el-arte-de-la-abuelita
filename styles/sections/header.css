@@ -20,28 +20,28 @@ header a {
 @media only screen and (max-width: 800px) {
     header { margin: 150px 100px 0 100px } 
     header div { gap: 30px }
-    .button-container  > * + * { margin-left: 1.8;}
 
-header {
-    margin: 200px 200px 0 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+    header {
+        margin: 200px 200px 0 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    header div {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    header a {
+        width: 100%;
+    }
+
+    .button-container > * + * { margin-left: 1.8;}
 }
 
-header div {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-}
 
-header a {
-    width: 100%;
-}
-
-@media only screen and (max-width: 800px) {
-    header { margin: 150px 100px 0 100px } 
-}
 
 @media only screen and (max-width: 500px) {
     header { margin: 100px 50px 0 50px } 
