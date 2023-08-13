@@ -4,17 +4,9 @@ import Text from './Text.js'
 
 export default function Card(props) {
 
-    const isSmall = () => {
-        if (props.style=="mini") {
-            return true
-        } else {
-            return false
-        }
-    }
-
     const product = (
         <figure className={`${styles.product} ${styles.card}`}>
-            <Image 
+            <img 
                 src={props.product.src}
                 alt={props.product.alt}
                 objectFit="cover"
