@@ -1,29 +1,29 @@
 import Link from "next/link"
-import Card from '../Card.js'
 import Header from '../Header.js'
-import sectionData from "../../data/sections.js"
-
+import Text from '../Text.js'
+import sectionData from '../../data/sections.js'
 
 export default function Shop() {
 
-    const cards = sectionData.map(section => {
-        return (
-            <Link key={section.id} href={section.href}>
-                <Card
-                    key={section.id}
-                    section={section}
-                    product={section}
-                    style="mini"
-                />
-            </Link>
-        )
-    })
+
+	const cards = sectionData.map(section => {
+		return (
+			<Link id={section.id} href={section.href}>
+			<figure className={`${section.label}__card card__mini`}>
+			<p>{section.label}</p>
+			</figure>
+			</Link>
+		)
+	})
+
 
     return (
         <section className="shop" id="shop">
             <Header label="Tienda" primary={false} />
             <div className="card_container">
-                {cards}
+
+	    {cards}
+
             </div>
         </section>
     )
