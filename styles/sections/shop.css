@@ -1,8 +1,9 @@
 .shop div {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-content: center;
     flex-wrap: wrap;
     padding: 0px;
     gap: 50px;
@@ -15,3 +16,24 @@
 
 .card_container > * + * { margin-left: 25px;}
 
+
+.shop__card {
+    display: flex;
+    align-items: flex-end;
+    margin: 0;
+    flex-grow: 1;
+    aspect-ratio: 1 / 1;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.shop__card p {
+    color: white;
+    width: 100%;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.shop__card:hover {
+    transform: scale(0.98);
+}

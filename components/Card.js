@@ -30,7 +30,6 @@ export default function Card(props) {
                     objectFit="cover"
                 />
                 <Text style='mini' label={props.section.label} />
-                <div/>
             </figure>
     )
 
