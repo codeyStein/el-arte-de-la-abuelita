@@ -23,8 +23,13 @@ export default function Masetas() {
         )
     })
 
+        const selectedProduct = {
+            img: "/img/products/bisuteria/bisuteria.png",
+            price: 10.00
+        }
 
     return (
+
         <>
             <NextSeo
             title="El Arte de la Abuelita"
@@ -62,9 +67,8 @@ export default function Masetas() {
                   <p>
                     <label htmlFor="email">Your Email: <input type="email" name="email" /></label>
                   </p>
-                  <p>
-                    <label htmlFor="message">Message: <textarea name="message"></textarea></label>
-                  </p>
+                    <input type="hidden" name="productImage" value={selectedProduct.img} />
+                    <input type="hidden" name="productPrice" value={selectedProduct.price} />
                   <p>
                     <button type="submit">Send</button>
                   </p>
