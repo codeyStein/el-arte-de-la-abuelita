@@ -53,6 +53,22 @@ export default function Masetas() {
                 <div className="products" id="productos">
                     {products}
                 </div>
+
+                <form name="contact" method="POST" data-netlify="true">
+                  <p>
+                    <label htmlFor="name">Your Name: <input type="text" name="name" /></label>
+                  </p>
+                  <p>
+                    <label htmlFor="email">Your Email: <input type="email" name="email" /></label>
+                  </p>
+                  <p>
+                    <label htmlFor="message">Message: <textarea name="message"></textarea></label>
+                  </p>
+                  <p>
+                    <button type="submit">Send</button>
+                  </p>
+                </form>
+
             </main>
             <Footer />
         </>
